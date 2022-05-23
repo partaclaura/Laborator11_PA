@@ -30,7 +30,7 @@ public class UserClient {
     public static void PostRequest()
     {
         User user = new User();
-        user.setName("Kevin");
+        user.setName("Cosmin");
         HttpHeaders headers = new HttpHeaders();
         headers.add("Accept", MediaType.APPLICATION_JSON_VALUE);
         headers.setContentType(MediaType.APPLICATION_JSON);
@@ -52,7 +52,7 @@ public class UserClient {
     {
         Map<String, String> params = new HashMap<>();
         params.put("id", "6");
-        String name = "Sara";
+        String name = "Davi";
         RestTemplate restTemplate = new RestTemplate();
         restTemplate.put(URL_GET_USER, name, params);
     }
